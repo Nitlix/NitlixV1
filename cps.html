@@ -1,0 +1,129 @@
+<!-- █▄ █ ▀ ▀█▀ █   ▀ █ █ ▀ █▀▀▀     █▀▀▀ ▀█▀ █ █ █▀▄ ▀ █▀█ █▀▀▀ 
+     █ ▀█ █  █  █   █ ▄▀▄ █ ▀▀▀█     ▀▀▀█  █  █ █ █ █ █ █ █ ▀▀▀█ 
+     ▀  ▀ ▀  ▀  ▀▀▀ ▀ ▀ ▀ ▀ ▀▀▀▀     ▀▀▀▀  ▀  ▀▀▀ ▀▀▀ ▀ ▀▀▀ ▀▀▀▀  
+-->
+<!DOCTYPE html>
+<html lang="en-uk">
+<head>
+	<meta charset="UTF-8">
+	<title>Nitlixis!</title>
+	<meta name="description"content="Nitlixis | Officicial site of all Nitlixis Studios Products | Buy maps, and private texture packs. Learn a little about Nitlix - the creator">
+	<meta name="keywords"content="CLICKBAIT">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+	</style>
+	<script src="javascript/main.js"></script>
+	<script src="javascript/cps-test.js"></script>
+
+</head>
+<body>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div id="preloader" class="preloader">
+  <div id="status"><center><img class="" style="width:300px;animation-name: load;animation-duration: 0.7s;" src="img/ns/nitlixis-white.png"></center></div>
+</div>
+
+<div id="hidden-settings" class="hidden-settings">
+	<h1 style="font-family: Noto Sans JP; font-size: 250%;letter-spacing: 1px;">Settings</h1>
+	<section class="settings-status">
+		<figure>
+			<img onclick="togglepreloader()" style="width: 20%; margin-bottom: -8px;" class="hover" src="img/ns/nitlixis-light.png" id="preload-switch">
+			<h1 style="font-family: Roboto;">Toggle Preloader</h1>
+		</figure>
+		<!--<figure>
+			<img onclick="thememode()" style="width: 20%; margin-bottom: -8px;" class="hover" id="switch">
+			<h1 style="font-family: Roboto;">Toggle Dark Mode</h1>
+		</figure>-->
+		<figure>
+			<img style="width: 20%;margin-bottom: -8px;" class="hover setting-buttons" src="img/UI/visitstat.png" id="visitstatimg">
+			<h1 id="visitstattxt" style="font-family: Roboto;">??? Visits</h1>
+
+		</figure>
+		<figure>
+			<img onclick="memoryclean()" style="width: 20%;margin-bottom: -8px;" class="hover setting-buttons" src="img/UI/reset.png" id="reset-switch">
+			<h1 style="font-family: Roboto;">Memory Clean</h1>
+
+		</figure>
+	</section>
+	<center>
+	<button onclick="uihide('#hidden-settings')" class="button-ready" style="margin-top: 30px;">Hide</button>
+	</center>
+</div>
+
+
+
+
+<!-- Top Menu -->
+<div class="menu-container">
+	<center>
+		<a href="index.html"> <img class="logo" style="width:100px;" src="img/ns/nitlixis-white.png" id="logo"></a>
+	</center>
+	<div class="menu" id="menu">
+		<a href="index.html" id="ma1">Home</a>
+		<img onclick="uishow('#hidden-settings'); registervisit('hidden-settings', 'settings-button', 'img/UI/settings.png');" style="width: 30px; margin-bottom: -10px;" src="img/UI/settings.png" class="hover" id="settings-button">		<!-- Don't forget about clamp()-->
+	</div>
+</div>
+
+
+
+
+<!-- Main Content -->
+
+
+
+<div class="gap"></div>
+
+<center>
+<div class="big-text" style="animation-name: welcomezoom;animation-duration: 1.5s;">
+	<h1>CPS TEST</h1>
+	<h3>"You should always practice to achieve victory."</h3>
+</div>
+<div class="gap"></div>
+<div class="gap"></div>
+
+<section class="cpsteststatdisplay" id="cpsteststatdisplay">
+	<figure>
+		<button class="button-ui" style="font-family: Roboto; width: 95%; height: 100px;" id="cpscps">Average CPS: ???</button>
+	</figure>
+	<figure>
+		<button class="button-ui" style="font-family: Roboto; width: 95%; height: 100px;" id="cpstime">Time: ???</button>
+	</figure>
+	<figure>
+		<button class="button-ui" style="font-family: Roboto; width: 95%; height: 100px;" id="cpshalfsec">CPS: ???</button>
+	</figure>
+	<figure>
+		<button class="button-ui" style="font-family: Roboto; width: 95%; height: 100px;" id="cpsatav">All-Time Average: ???</button>
+	</figure>
+</section>
+<br>
+<button onclick="startcpstest()" class="cpsbox" style="height: 200px; width: 30%;" id="cpsbox">START CPS TEST</button>
+<br>
+<button onclick="endcpstest()" class="button-not" style="font-family: Roboto; margin-top: 30px;" id="endcpstestbutton">END CPS TEST</button>
+<div class="gap"></div>
+<!-- About -->
+<div style="max-width: 500px; width: min(calc(70%));"></div>
+	
+<!-- Footer -->
+	<footer id="footer" class="footer nitlixis-box" style="max-width: 500px; width: min(calc(70%));">
+		<div class="big-text" style="color: black; padding-top: 2%; text-align: center;">
+			<img src="img/ns/nitlixisstudios-gradient-fixed.png" style="width: 80%; padding-top: 10px;">
+			<h1 style="font-size: 100%; padding-bottom: 10px" id="footer-text">©2019-2030 <br>All rights reserved.</h1>
+		</div>
+	</footer>
+</center>
+
+
+
+
+
+
+
+
+</body>
+</html>
